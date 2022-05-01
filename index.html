@@ -1,93 +1,760 @@
-<!DOCTYPE html>
-<html lang='cn' class=''>
+﻿<!DOCTYPE html>
+<html lang="cn">
+
 <head>
-  <meta charset='UTF-8'>
-  <title>枫丶空白的小站</title>
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon-96x96.png">
-  <meta http-equiv="refresh" content="1.5;url=http:sweepwater.cn:886/index.html" />
-  <style class="INLINE_PEN_STYLESHEET_ID">
-    body
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #240229;
-}
-.loader
-{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0); 
-    animation: animate 0.8s linear infinite;
-}
-@keyframes animate
-{
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-}
-.loader span
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
-    animation: animate 0.8s linear infinite;
-}
-.loader span:nth-child(1)
-{
-    filter: blur(5px);
-}
-.loader span:nth-child(2)
-{
-    filter: blur(10px);
-}
-.loader span:nth-child(3)
-{
-    filter: blur(25px);
-}
-.loader span:nth-child(4)
-{
-    filter: blur(50px);
-}
-.loader:after
-{
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: #240229;
-    border-radius: 50%;
-}
-  </style>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="xqode">
+    <!-- ======== Page title ============ -->
+    <title>枫丶空白的小站</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/favicon-96x96.png">
+    <!-- ===========  All Stylesheet ================= --> 
+	<!--  fontawesome css plugins -->
+    <link rel="stylesheet" href="static/css/fontawesome.min.css">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <!--  owl carosuel css plugins -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!-- metisMenu css file -->
+    <link rel="stylesheet" href="static/css/metismenu.css">
+    <!-- progresscircle css file -->
+    <link rel="stylesheet" href="static/css/progresscircle.css">
+    <!--  owl theme css plugins -->
+    <link rel="stylesheet" href="static/css/owl.theme.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!--  main style css file -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- template main style css file -->
+    <link rel="stylesheet" href="static/css/style_1.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="static/js/html5shiv.js"></script>
+    <script src="static/js/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-  <hmtl>
-    <head>
-        <title>枫丶空白的小站</title>
-    </head>
-    <body>
+
         <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
         </div>
-    </body>
- </script>
-</hmtl>
+    </div>
+	
+	<!-- header-section -->
+    <header class="header-section header-style-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-6">
+                    <div class="logo">
+                        <a href="index.html">KBDR</a>
+                    </div>
+                </div>
+                <div class="col-lg-8 offset-lg-2 d-none d-lg-block text-right">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#">主页</a></li>
+                            <li><a href="#about">关于</a></li>
+                            <li><a href="#services">为什么</a></li>
+                            <li><a href="#resume">历史</a></li>
+                            <li><a href="#portfolio">商品</a></li>
+                            <li><a href="#blog">分享</a></li>
+                            <li><a href="#contact">我</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 d-block d-lg-none">
+                    <div class="menu-toggle text-right">
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- mobile menu - responisve menu  -->
+                    <div class="mobile-nav">
+                        <button type="button" class="close-nav">
+                            <i class="fal fa-times-circle"></i>
+                        </button>
+                        <nav class="sidebar-nav">
+                            <ul class="metismenu" id="mobile-menu">
+                                <li>
+                                    <a class="has-arrow" href="#">Home</a> 
+                                </li>
+                                <li>
+                                    <a href="#about">about</a>
+                                </li>
+                                <li>
+                                    <a href="#services">services</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#blog">blog</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">contact</a>
+                                </li>
+                            </ul>
+                        </nav> 
+                        <a href="more1.html" class="theme-btn mt-4">更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+	
+	<!-- hero-section -->
+    <section class="hero-section hero-1">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-sm-12 text-center text-lg-left">
+                    <div class="hero-content overflow-hidden">
+                        <span class="hello-tooltip wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s">欢迎来到</span>
+                        <h1 class="wow fadeInLeft" data-wow-duration="1.3s" data-wow-delay=".9s">枫丶空白的小站</h1>
+                        <div class="typed">
+                           <h3 class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.3s">很高兴<span class="profession"></span></h3>
+                        </div>
+                        <p class="wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.6s">这是我的第一个网站. 同时也是记录生活的地方.</p>
+                        <a href="more1.html" class="theme-btn wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.9s">更多</a>
+					</div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-sm-12 text-center overflow-hidden">
+                    <div class="hero-profile-img wow fadeInUp" data-wow-duration="2s" data-wow-delay=".9s">
+                        <img src="static/picture/hero-profile.png" alt="maxim" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- about-section -->
+	<section class="about-section section-padding theme-bg-gray" id="about">
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-5 col-12 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay=".1s">
+                     <div class="main-profile-img">
+                        <img src="static/picture/main_profile.png" alt="profile image">
+                       <span>+</span>
+                       <div class="dots_animate"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1 col-12 wow fadeInRight" data-wow-duration="1.2s" data-wow-delay=".4s">
+                    <div class="about-content">
+                        <h1>我的家庭</h1>
+                        <h3>庞大的段姓</h3>
+                        <p>段姓，是一个多民族、多源流姓氏。段字的本义是锤击、锤炼的意思。</p>
+                        <p>
+Duan surname is a multi-ethnic and multi-source surname. The original meaning of Duan Zi is hammering and tempering.</p>
+						<div class="row mt-4">
+                                                   </div>
+
+                        <a href="more.html" class="theme-btn">更多</a>
+                    </div>  
+				</div>
+            </div>
+		</div>
+	</section>
+			
+    <!-- service section -->
+    <section class="services-section section-padding" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center col-lg-10 offset-lg-1">
+                    <div class="section-title-one wow fadeInDown" data-wow-duration="1.2s">
+                        <span>为什么？</span>
+                        <h2>我为什么要做个网站呢，说实话我也不知道要干嘛，可能只是万千想法的一个实践吧。</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="icon">
+                           <img src="static/picture/seo.png" alt="">
+                        </div>
+                        <h3>Graphic Design</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div> <!-- /.single-service -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                        <div class="icon">
+                           <img src="static/picture/creativity.png" alt="">
+                        </div>
+                        <h3>Web Developement</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div> <!-- /.single-service -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="icon">
+                            <img src="static/picture/code.png" alt="">
+                        </div>
+                        <h3>Media Marketing</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div>   
+				<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="icon">
+                            <img src="static/picture/seo.png" alt="">
+                        </div>
+                        <h3>Analytics</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div>
+            	<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="icon">
+                            <img src="static/picture/code.png" alt="">
+                        </div>
+                        <h3>Advetising</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div>
+            	<div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-service service-1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".8s">
+                        <div class="icon">
+                            <img src="static/picture/creativity.png" alt="">
+                        </div>
+                        <h3>Apps Design</h3>
+                        <p>Modern and mobile-ready website that will help of your marketing.Clarinet accustomed.</p>                        
+                    </div>
+                </div> 
+			</div>
+			<div class="contact-promo text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay=".9s">
+				Have any Question? Fill Free to -  <a href="#contact">Contact Me</a>
+			</div>
+        </div>
+    </section>
+   
+    <!-- skills-section -->
+    <section class="skills-experiance-resume section-padding" id="resume">
+      <div class="container">
+        <div class="row">
+           <div class="col-12 text-center col-lg-10 offset-lg-1">
+               <div class="section-title-one">
+                   <span>历史</span>
+                   <h2>家庭的历史</h2>
+               </div>
+           </div>
+        </div>
+
+        <div class="row"> 
+           <div class="col-lg-5 col-12">
+		        <div class="design-skills mt-45">
+					<h3>Where I excel</h3>
+					<div class="row">
+						<div class="single-design-skill text-center col-sm-4 col-12">
+							<div class="circlechart" data-percentage="88"></div>
+							<p>Prototype</p>
+						</div>
+						<div class="single-design-skill text-center col-sm-4 col-12">
+							<div class="circlechart" data-percentage="70"></div>
+							<p>In Process</p>
+						</div>
+						<div class="single-design-skill text-center col-sm-4 col-12">
+							<div class="circlechart" data-percentage="67"></div>
+							<p>Support</p>
+						</div>
+					</div>
+                </div>
+              <div class="programming-skill mt-5">
+                 <h3>Coding Skills</h3>
+
+                 <div class="single-progress-bar">
+                  <p>HTML & CSS</p>
+                   <div class="progress-bar barfiller" id='bar1'>                      
+                     <div class="tipWrap wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s">
+                        <span class="tip">88%</span>
+                     </div>
+                     <span class="fill wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".2s" data-percentage="88"></span>
+                   </div>
+                 </div>
+                 
+                 <div class="single-progress-bar">
+                  <p>PHP</p>
+                   <div class="barfiller progress-bar" id='bar2'>                      
+                     <div class="tipWrap wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s">
+                        <span class="tip">78%</span>
+                     </div>
+                     <span class="fill wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".4s" data-percentage="78"></span>
+                   </div>
+                 </div>
+
+                 <div class="single-progress-bar">
+                  <p>Javascript</p>
+                   <div class="barfiller progress-bar" id='bar3'>                      
+                     <div class="tipWrap wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".6s">
+                        <span class="tip">90%</span>
+                     </div>
+                     <span class="fill wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".6s" data-percentage="90"></span>
+                   </div>
+                 </div>
+
+                 <div class="single-progress-bar">
+                  <p>Wordpress</p>
+                   <div class="barfiller progress-bar" id='bar4'>                      
+                     <div class="tipWrap wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".8s">
+                        <span class="tip">65%</span>
+                     </div>
+                     <span class="fill wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".8s" data-percentage="65"></span>
+                   </div>
+                 </div>
+              </div> 
+           </div>
+		     <div class="col-lg-7 col-12">
+                <div class="resume-timeline-wraper mt-5">
+                    <div class="row">
+
+                        <div class="col-sm-3">
+                           <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <a class="nav-link active" id="v-pills-edu-tab" data-toggle="pill" href="#v-pills-edu" role="tab" aria-controls="v-pills-edu" aria-selected="true">Education</a>
+                              <a class="nav-link" id="v-pills-job-tab" data-toggle="pill" href="#v-pills-job" role="tab" aria-controls="v-pills-job" aria-selected="false">Experience</a>
+                              <a class="nav-link" id="v-pills-awards-tab" data-toggle="pill" href="#v-pills-awards" role="tab" aria-controls="v-pills-awards" aria-selected="false">Awards</a>
+                           </div>
+                        </div>
+
+                        <div class="col-sm-9">
+                           <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-edu" role="tabpanel" aria-labelledby="v-pills-edu-tab">
+                                  <div class="single-resume-item">
+                                      <div class="year">
+                                          <span>2003-2007</span>
+                                      </div>
+                                      <h3>DPR Engineering</h3>
+                                      <h5>Stanford University</h5>
+                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  </div>
+                                  <div class="single-resume-item">
+                                      <div class="year">
+                                          <span>2007-2010</span>
+                                      </div>
+                                      <h3>CSS Diploma</h3>
+                                      <h5>Stanford University</h5>
+                                      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                  </div>
+                                  <div class="single-resume-item">
+                                      <div class="year">
+                                          <span>2010-2014</span>
+                                      </div>
+                                      <h3><a href="http://www.kbdr.xyz:8888/externalLinksController/chain/data.html?ckey=kVrHaslkeV%2BG%2BtQOQBOtOmc%2Be%2BU8mWZEslzKEvix4q5sM5y0JAMGKNf6W2DYxvIZ">父亲的作文-2012的感悟</a>
+      </h3>
+                                      <h5>孩子就是希望，就是未来，所以我翻身起床，为了未来加倍努力。 </h5>
+                                      <a href="http://www.kbdr.xyz:8888/externalLinksController/chain/data.html?ckey=P1hcjLX0UKPuWkfTKMl3siX2XdMRcaa1Ra20ixeWla2qiF%2Ff2zj6RE57Xsin1q8W">  有一天清晨，牛牛跑到我床前，很认真地望着我说：爸爸，早上好！搞得老子好一阵激动。
+      窗外阳光明媚，一点也不像世界末日预言能应验的样子。我的儿子必将健康长大，而我必将老去，一如我父亲现在的模样。
+      我童年的记忆是那一望无际的油菜花，嗡嗡飞舞的蜜蜂，以及在田间小径上狂奔的小花狗....</a>
+                                  </div>
+                              </div>
+
+                              <div class="tab-pane fade" id="v-pills-job" role="tabpanel" aria-labelledby="v-pills-job-tab">
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2014-2015</span>
+                                    </div>
+                                    <h3>User Interface Designer</h3>
+                                    <h5>JOHNDEV</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2015-2018</span>
+                                    </div>
+                                    <h3>Front-End Developer</h3>
+                                    <h5>Upwork</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2020-Current</span>
+                                    </div>
+                                    <h3>Full Stack Developer</h3>
+                                    <h5>Freelancer</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                              </div>
+
+                              <div class="tab-pane fade" id="v-pills-awards" role="tabpanel" aria-labelledby="v-pills-awards-tab">
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2018</span>
+                                    </div>
+                                    <h3>Top UX Designer</h3>
+                                    <h5>Phoenix Awards - 2018</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2019</span>
+                                    </div>
+                                    <h3>Special Freelance Developer</h3>
+                                    <h5>Youtube Special Awards - 2019</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                                <div class="single-resume-item">
+                                    <div class="year">
+                                        <span>2021</span>
+                                    </div>
+                                    <h3>San Alendi Freelance</h3>
+                                    <h5>Senior WordPress Awards - 2021</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> 
+                </div>
+           </div>
+        </div>
+      </div>
+    </section>
+	
+    <!-- counter section -->
+    <section class="about-section section-padding theme-bg-gray" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1 achivements-area"> 
+					<div class="single-achivement">
+                        <div class="icon">
+                           <img src="static/picture/career.png" alt="">
+                        </div>
+                        <div class="achive-heading">
+                            <h3>5 YEARS</h3>
+                            <span>Experienced Designer</span>
+                        </div>
+                    </div> <!-- single-achivement -->
+                    <div class="single-achivement">
+                        <div class="icon">
+                           <img src="static/picture/client.png" alt="">
+                        </div>
+                        <div class="achive-heading">
+                            <h3>600+</h3>
+                            <span>Satisfied Clients</span>
+                        </div>
+                    </div> <!-- single-achivement -->   
+					<div class="single-achivement">
+                        <div class="icon">
+                           <img src="static/picture/start-up.png" alt="">
+                        </div>
+                        <div class="achive-heading">
+                            <h3>High Reviewed</h3>
+                            <span>Top Rated UI-UX</span>
+                        </div>
+                    </div> <!-- single-achivement --> 
+                </div>
+            </div> 
+        </div>
+    </section>
+ 
+	<!-- portfolio-section -->
+    <section class="portfolio-showcase section-padding pt-0" id="portfolio">
+       <div class="container">
+         <div class="row">
+            <div class="col-12 text-center col-lg-10 offset-lg-1">
+                <div class="section-title-one">
+                    <span>Latest Work</span>
+                    <h2>As a designer I have been working few years and I have completed lot's of projects.</h2>
+                </div>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="portfolio-filter mt-4 mt-sm-5">
+                    <button data-filter="*" class="active">Show All</button> 
+                    <button data-filter=".ui">UI/UX</button>
+                    <button data-filter=".branding">Branding</button>
+					<button data-filter=".design">Design</button>
+                    <button data-filter=".development">Development</button>
+                </div>
+            </div>
+        </div>
+        <div class="row grid p-0">
+            <div class="col-lg-4 col-md-6 col-12 grid-item ui">
+                <div class="single-portfolio-item">
+                    <a href="assets/img/portfolio/1.jpg" class="popup-gallery">
+                        <img class="img-fluid" src="static/picture/1.jpg" alt="">
+                        <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 grid-item design branding development">
+                <div class="single-portfolio-item">
+                    <a href="assets/img/portfolio/bigger.jpg" class="popup-gallery">
+                        <img class="img-fluid" src="static/picture/bigger.jpg" alt="">
+                        <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 grid-item ui">
+                <div class="single-portfolio-item">
+                    <a href="assets/img/portfolio/4.jpg" class="popup-gallery">
+                        <img class="img-fluid" src="static/picture/4.jpg" alt="">
+                        <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 grid-item ui development">
+                <div class="single-portfolio-item">
+                    <a href="assets/img/portfolio/5.jpg" class="popup-gallery">
+                        <img class="img-fluid" src="static/picture/5.jpg" alt="">
+                        <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </div>
+            </div>            
+            <div class="col-lg-4 col-md-6 col-12 grid-item design">
+                <div class="single-portfolio-item">
+                    <a href="assets/img/portfolio/6.jpg" class="popup-gallery">
+                        <img class="img-fluid" src="static/picture/6.jpg" alt="">
+                        <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 grid-item design branding">
+               <div class="single-portfolio-item">
+                   <a href="assets/img/portfolio/2.jpg" class="popup-gallery">
+                       <img class="img-fluid" src="static/picture/2.jpg" alt="">
+                       <span class="zoom-icon"><i class="fa fa-search"></i></span>
+                   </a>
+               </div>
+           </div>
+         </div>
+       </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section id="testimonial" class="testimonial-section section-padding theme-bg-gray">
+        <div class="container">
+            <div class="row">                
+                <div class="col-12">
+                    <div class="testimonial-carousel-active text-center owl-carousel owl-theme">
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client1.png');"></div>
+                            <div class="client-info">
+                                <h3>Brandon Morli</h3>
+                                <span>UI/UX Designer, USA</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div>
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client3.png');"></div>
+                            <div class="client-info">
+                                <h3>Greg Cooper</h3>
+                                <span>CEO at EgoPlanet, London</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div>
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client2.png');"></div>
+                            <div class="client-info">
+                                <h3>John Morris</h3>
+                                <span>Founder at UIHUB</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div>
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client1.png');"></div>
+                            <div class="client-info">
+                                <h3>Mitchel Hubbel</h3>
+                                <span>Product Marketer</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div>
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client3.png');"></div>
+                            <div class="client-info">
+                                <h3>Hall Magbis</h3>
+                                <span>Mannager at Dowton</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div>
+                        <div class="single-testimonial-box">
+                           <div class="client-img" style="background-image: url('static/images/client2.png');"></div>
+                            <div class="client-info">
+                                <h3>Shami Habless</h3>
+                                <span>Co-Founder at Chicago</span>
+                            </div>
+                            <p>Really that guy is amazing, he saved my time and properly have completed.</p>
+                        </div> 
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- blog section -->
+    <section class="blog-section section-padding" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center col-lg-8 offset-lg-2">
+                    <div class="section-title-one">
+                        <span>news updates</span>
+                        <h2>Get Every Updates.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-blog blog-one">
+                        <div class="featured-img" style="background-image: url('static/images/blog-1.jpg');"></div>
+                        <div class="blog-content-box">
+                            <div class="post-date">05 September 2021,  Monday</div>
+                            <h3><a href="single-blog.html">Design does not means what it looks but what it give message</a></h3>
+
+                            <a href="single-blog.html" class="read-more-btn">+ Read More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.single-blog -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-blog blog-one">
+                        <div class="featured-img" style="background-image: url('static/images/blog-2.jpg');"></div>
+                        <div class="blog-content-box">
+                            <div class="post-date">05 September 2021,  Monday</div>
+                            <h3><a href="single-blog.html">New Marketing strategy can change your business success</a></h3>
+
+                            <a href="single-blog.html" class="read-more-btn">+ Read More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.single-blog -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="single-blog blog-one">
+                        <div class="featured-img" style="background-image: url('static/images/blog-3.jpg');"></div>
+                        <div class="blog-content-box">
+                            <div class="post-date">05 September 2021,  Monday</div>
+                            <h3><a href="single-blog.html">Design does not means what it looks but what it give message</a></h3>
+
+                            <a href="single-blog.html" class="read-more-btn">+ Read More</a>
+                        </div>
+                    </div>
+                </div> <!-- /.single-blog -->
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section section-padding theme-bg-gray" style="background-image: url('static/images/testimonial_bg.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center col-lg-10 offset-lg-1">
+                    <div class="section-title-one">
+                        <span>Contact Me</span>
+                        <h2>Let's talk together with your project</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+				<div class="col-lg-4 col-12 offset-lg-1">
+                    <div class="contact-info">
+                        <div class="single-info">
+                            <h4>邮箱:</h4>
+                            <span>duanyida2019@163.com</span>
+                        </div>
+                        <div class="single-info">
+                            <h4>电话:</h4>
+                            <span>18573167693</span>
+                        </div>
+                        <div class="single-info">
+                            <h4>QQ:</h4>
+                            <span>3486073484</span>
+                        </div>
+                    </div>
+                </div><!-- col-lg-4 col-12 -->
+                <div class="col-12 col-lg-7">
+                    <div class="contact-form-wraper">
+                        <form action="mail.php" id="contact-form" method="POST" class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="single-input">
+                                    <input type="text" name="name" id="name" placeholder="Write Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="single-input">
+                                    <input type="email" name="email" id="email" placeholder="Type Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-12">
+                                <div class="single-input">
+                                    <textarea placeholder="Message Box" name="message" id="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="theme-btn">+ Send Mesage</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- col-12 col-lg-8 --> 
+            </div>          
+        </div>
+    </section>
+
+	<!-- footer-section -->
+    <footer class="footer-one text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-7"> 
+                    "sweepwater.cn"<a target="_blank" href="http://www.sweepwater.cn:2022">       文件站</a>
+                </div>
+				<div class="col-5">
+					<div class="social-profile">
+						<a href="mc.html" class="wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="2.2s"><i class="fa fa-plus"></i>我的服务器</a>
+						<a href="http://www.sweepwater.cn:2022" class="wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="2.5s"><i class="fa fa-plus"></i>一些乱七八糟的代码</a>
+						<a href="mc.html" class="wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="2.7s"><i class="fa fa-plus"></i>哔哩哔哩</a>
+					</div>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="static/js/jquery-1.12.4.min.js"></script>
+    <script src="static/js/modernizr-3.7.1.min.js"></script>
+    <script src="static/js/jquery.easing.1.3.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/isotope.pkgd.min.js"></script>
+    <script src="static/js/imageload.min.js"></script>
+    <script src="static/js/scrollup.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/magnific-popup.min.js"></script>
+    <script src="static/js/waypoint.js"></script>
+    <script src="static/js/counterup.min.js"></script>
+    <script src="static/js/typed.min.js"></script>
+    <script src="static/js/metismenu.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/progresscircle.js"></script>
+    <script src="static/js/barfiller.js"></script>
+    <script src="static/js/ajax-mail.js"></script>
+    <script>
+    let typed = new Typed('.profession', {
+        strings: ["你能来到这里", "你能看到这段话"],
+        typeSpeed: 80,
+        loop: true,
+        startDelay: 200,
+        backSpeed: 50,
+    });
+    </script>
+    <script src="static/js/active.js"></script>
 </body>
+
 </html>
